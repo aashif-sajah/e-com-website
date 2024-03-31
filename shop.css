@@ -1,0 +1,344 @@
+/* Presentation css starts here  */
+/* common through-out all pages */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .Heading{
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    padding-bottom: 50px;
+    }
+    
+    .logo{
+      border-radius: 100px;
+      height: 150px;
+     
+    }
+  
+    
+    
+  /* Shopping cart css starts here */
+  .shop-body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    /* background-image: linear-gradient(90deg, rgba(2,0,36,0.8) 0%, rgba(185,76,40,0.8) 35%, rgba(0,219,255,0.4) 100%), url(images/bg3.jpeg); */
+  
+    background-color: #a72e78;
+    background-size: cover;
+    }
+  
+  nav{
+  
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  padding: 10px 25px;
+  margin-bottom: 40px;
+  
+  }
+  a.active,a:hover{
+      border: 1px solid white;
+      transition: .5s;
+      
+  }
+  
+  /* Style the cart */
+  #cart{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 8px;
+    position: relative;
+    
+  }
+  
+  .cart-amount{
+  font-size: 25px;
+  background-color: #d73232;
+  color: #fdfdfd;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  border-radius: 5px;
+  width: 25px;
+  text-align: center;
+  
+  }
+  
+  .main-shop{
+  width: 100%;
+  height: 100vh;
+  }
+  
+  #shop{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    gap: 15px;
+    justify-content: left;
+    margin-left: 100px;
+  }
+  
+  .cart-content{
+  float: right;
+  margin-right: 40px;
+  width: 300px;
+  margin-top: -1038px;
+  height:1040px;
+  width: 400px;
+  background-image:  radial-gradient(circle, rgba(62,69,102,.4) 0%, rgba(227,227,227,.3) 100%);
+  border-radius: 5px;
+  border:2px solid rgb(43, 39, 39) ;
+  position: absolute;
+  left: 900px;
+  
+  }
+  .checkout{
+    text-align: center;
+  }
+  
+  .cart-header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    font-weight: bolder;
+    
+  }
+  .cart-item{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart-img{
+    border: 1px solid rgba(232, 97, 13, 0.568);
+    border-radius: 4px;
+    margin: 10px;
+    width:100px;
+     height:90px;
+     background-size: cover;
+  }
+  .cart-desc{
+   text-align: center;
+   margin-left: 5px;
+   font-weight: bolder;
+  }
+  .unit-price{
+    margin-top: 60px;
+    margin-left: -80px;
+    font-weight: bolder;
+  }
+  .number{
+    margin: 0 10px;
+    font-weight: bolder;
+  }
+  .fa-plus{
+  color: black;
+  }
+  .fa-minus{
+  color: black;
+  }
+  .units{
+    margin-top: 60px;
+    margin-right: 40px;
+    display: flex;
+    font-weight: bolder;
+  }
+  .fa-trash{
+    margin-left: 15px;
+  }
+  .cart-footer{
+  position: absolute;
+  top: 10px;
+  padding-left: 135px;
+  }
+  #checkout{
+    background-color: #d73232;
+    border-radius: 4px;
+    width: 105px;
+    text-align: center;
+    color: #f4ebe9;
+    height: 50px;
+    padding-top: 10px;
+    border: none;
+  }
+  button:disabled {
+    opacity: 0.6;
+    filter: saturate(70%);
+  }
+  
+  .item{
+    border: 2px solid #0B2447;
+    border-radius: 3px;
+    background-color: #ffffff;
+  }
+  .details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+  .price-qty{
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart{
+    background-color: #002B5B;
+    color: #f4ebe9;
+    width: 120px;
+    height: 30px;
+    border-radius: 7px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .bill-body{
+    background: rgb(219,38,38);
+    background: linear-gradient(90deg, rgba(219,38,38,1) 0%, rgba(223,139,111,1) 35%, rgba(37,140,156,1) 100%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+  }
+  .order-summary{
+    background-image:  radial-gradient(circle, rgba(62,69,102,.4) 0%, rgba(227,227,227,.3) 100%);
+    margin: 20px 80px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* text-align: center; */
+  }
+  .first{
+    text-align: center;
+    margin-bottom: -50px;
+    width: 800px;
+    margin-left: 100px;
+  }
+  .space-value{
+    margin-left: 200px;
+    text-align: left;
+  }
+  .space-value-1{
+    margin-left: 190px;
+    text-align: left;
+  }
+  .space-value-total{
+    margin-left: 130px;
+    text-align: left;
+  }
+  .cvv{
+    margin: 10px;
+  }
+  .labell{
+    margin: 30px 0;
+  }
+  
+  
+  .btn-purchase:hover {
+    color: rgb(196, 210, 115);
+  }
+  
+  /* form */
+  
+  .form {
+   margin: 100px; 
+   
+  
+  }
+  
+  .form-address {
+    width: 60%;
+  }
+  
+  
+  .inpt,.form-name,#country{
+    border-radius: 3px;
+    background-color: #e8bebe;
+    border: none;
+    margin: 10px 0;
+  }
+  .set{
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-date-cvv{
+    width: 40px;
+    border-radius: 3px;
+    background-color: #e8bebe;
+    border: none;
+  }
+  .save{
+    border-radius: 12px;
+    border: none;
+    margin-left: 600px;
+    background-color: rgb(249, 30, 30);
+    color: white;
+    width: 80px;
+    height:50px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .billing-edit-save{
+    border-radius: 8px;
+    width: 110px;
+    border: none;
+    background-color: rgba(235, 138, 20, 0.929);
+    color: #ffffff;
+    margin:15px 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 40px;
+  }
+  .edit{
+    margin-left: 200px;
+    font-weight: bolder;
+    color: rgb(132, 178, 182);
+  }
+  .accordian{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    background-image:  radial-gradient(circle, rgba(62,69,102,.4) 0%, rgba(227,227,227,.3) 100%);
+  }
+  .accordian__label,
+  #address-li{
+    padding: 14px 20px;
+  }
+  .accordian__label {
+    display: block;
+    color: #000000;
+    font-weight: bolder;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+  }
+  .accordian__label:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .accordian__content {
+    /* background-image:  radial-gradient(circle, rgba(62,69,102,.4) 0%, rgba(255, 251, 251, 0.3) 100%); */
+    line-height: 1.6;
+    font-size: 0.85em;
+    border-radius: 45px;
+    margin: 10px 10px;
+    display: none;
+  }
+  .accordian__address {
+    display: none;
+  }
+  
+  .accordian__address:checked ~ .accordian__content {
+    display: block;
+  }
+  #updated-detail,#updated-detail-address{
+    margin: 5px 20px;
+    color: rgb(53, 60, 66);
+  }
+  
+  .required:after {
+    content:" *";
+    color: red;
+  }
+  

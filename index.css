@@ -1,0 +1,52 @@
+/* Reset default margin and padding */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the splash screen content vertically and horizontally */
+.splash-container {
+    background-image: url('images/bg1.jpeg'); /* Adjust URL as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    position: relative;
+}
+
+/* Style the website title */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Adjust color as needed */
+}
+
+/* Style the mission statement */
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #353232; /* Adjust color as needed */
+}
+
+/* Style the group members list */
+.group-members {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.Student {
+    font-size: 1.2em;
+    position: relative;
+    left: 40px;
+}
+
+/* Style the loader image */
+.loader img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    position: relative;
+    top: 50px;
+
+}
