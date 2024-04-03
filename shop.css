@@ -105,9 +105,16 @@
   .cart-header{
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 30px;
     font-weight: bolder;
-    
+  }
+
+  .heading{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: larger;
+    margin-top: 20px;
   }
   .cart-item{
     display: flex;
@@ -287,12 +294,12 @@
   
   .bill-body{
     background: rgb(219,38,38);
-    background: linear-gradient(90deg, rgba(219,38,38,1) 0%, rgba(223,139,111,1) 35%, rgba(37,140,156,1) 100%);
+    background-color: #fff;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
   }
   .order-summary{
-    background-image:  radial-gradient(circle, rgba(62,69,102,.4) 0%, rgba(227,227,227,.3) 100%);
+    background-color:#eeeee6;
     margin: 20px 80px;
     border-radius: 10px;
     padding: 15px;
@@ -300,7 +307,7 @@
     /* text-align: center; */
   }
   .first{
-    text-align: center;
+    text-align: left;
     margin-bottom: -50px;
     width: 800px;
     margin-left: 100px;
@@ -355,7 +362,7 @@
   .form-date-cvv{
     width: 40px;
     border-radius: 3px;
-    background-color: #e8bebe;
+    background-color: #fff;
     border: none;
   }
   .save{
@@ -387,7 +394,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     overflow: hidden;
-    background-image:  radial-gradient(circle, rgba(62,69,102,.4) 0%, rgba(227,227,227,.3) 100%);
+    background-color: #EEEEE6;
   }
   .accordian__label,
   #address-li{
@@ -428,4 +435,95 @@
     content:" *";
     color: red;
   }
+
+  .form-1-order-summary ul,li{
+    padding: 10px;
+  }
+
+ .edit-button button{
+  background-color: #130681;
+  color: #eee;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition:0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -50px;
+  padding: 20px;
+  width: 100px;
+    
+  }
+ 
+  .order-summary{
+    background-color:#eeeee6;
+    margin: 20px 80px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* text-align: center; */
+  }
+  .first{
+    text-align: left;
+    margin-bottom: -50px;
+    width: 800px;
+    margin-left: 100px;
+  }
+  .space-value{
+    margin-left: 200px;
+    text-align: left;
+  }
+  .space-value-1{
+    margin-left: 190px;
+    text-align: left;
+  }
+  .space-value-total{
+    margin-left: 130px;
+    text-align: left;
+  }
+  .cvv{
+    margin: 10px;
+  }
+  .labell{
+    margin: 30px 0;
+  }
+  
+  
+  .btn-purchase:hover {
+    color: rgb(196, 210, 115);
+  }
+  
+  /* form */
+  
+  .form {
+   margin: 100px; 
+   
+  
+  }
+  
+  .form-address {
+    width: 60%;
+  }
+  
+  
+  .inpt,.form-name,#country{
+    border-radius: 3px;
+    background-color: #e8bebe;
+    border: none;
+    margin: 10px 0;
+  }
+  .set{
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-date-cvv{
+    width: 40px;
+    border-radius: 3px
+ }
+
+
+
+  
   

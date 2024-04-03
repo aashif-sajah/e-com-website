@@ -94,26 +94,29 @@ renderProdcuts();
 
 
 let cart_array=[]
-
 function cart_addition(id) {
-// check if prodcut already exist in cart
-if (cart_array.some((item) => item.id === id)) {
-  changeUnits("increament",id)
-} else {
-  const item = products.find((product) => product.id === id);
+  // check if product already exists in cart
+  const existingItem = cart_array.find((item) => item.id === id);
+  if (existingItem) {
+      changeUnits("increament", id);
+  } else {
+      const product = products.find((p) => p.id === id);
+      cart_array.push({
+          id: product.id,
+          name: product.name,
+          price: product.price,
+          imgSrc: product.imgSrc,
+          qty: 1,
+      });
+  }
+  localStorage.setItem("cartItems", JSON.stringify(cart_array));
+  console.log(cart_array);
+  if (cart_array.length > 0) {
+      document.getElementById("checkout").disabled = false;
+  }
+  updateCart();
+}
 
-  cart_array.push({
-    ...item,
-    qty: 1,
-  });
- 
-}
-if(cart_array.length>0){
-  document.getElementById("checkout").disabled=false;
-}
-
-updateCart();
-}
 function updateCart(){
 
 renderItems();
@@ -148,6 +151,7 @@ function renderItems(){
 
 
 
+
 function changeUnits(action, id) {
 cart_array = cart_array.map((item) => {
   let qty = item.qty;
@@ -160,6 +164,7 @@ cart_array = cart_array.map((item) => {
       
     }
   }
+  
   return {
     ...item,
     qty,
@@ -175,15 +180,13 @@ cart_array.forEach((item)=>{
   totalPrice+=item.price*item.qty;
   totalItem+=item.qty
   
-
 });
+
+
+
 total.innerHTML=`<div class="totalPrice">TOTAL : LKR ${totalPrice} </div>`
+localStorage.setItem("totalPrice", totalPrice);
 items.innerHTML=`${totalItem}`
-
-
-
-localStorage.setItem("subtotal", totalPrice);
-const subtotal = localStorage.getItem("subtotal");
 
 
 

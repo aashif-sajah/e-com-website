@@ -1,151 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sportify | sports Website</title>
-    <link rel="stylesheet" href="shop.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="shortcut icon" href="images/favicon (2).ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/01bdf88e80.js" crossorigin="anonymous"></script>
-</head>
-<body class="bill-body">
-    
-    <nav>
-        <img src="logo.png" class="logo" alt="">
-        <ul>
-            <li><a class="active" href="home.html">Home</a></li>
-            <li><a href="Shop.html">Shop</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-        </ul>
-    </nav>
-            
-        </nav>
-        <div class="content-bill">
-            <div class="order-summary first">
-                <ul>
-                    <li>Name: <span class="space-value" id="space-value"></span></li>
-                    <br>
-                    <li>Contact:<span class="space-value-1" id="space-value-1"></span> </li>
-                    <br>
-                    <li>payment amount: <span class="space-value-total" id="total-amount">0</span></li>
-                </ul>
-            
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body class="shop-body">
+    <div class="container">
+      <form action="success.html">
+        <div class="row">
+          <div class="col">
+            <h3 class="title">billing address</h3>
+
+            <div class="inputBox">
+              <span>full name :</span>
+              <input type="text" placeholder="john deo" required/>
+            </div>
+            <div class="inputBox">
+              <span>email :</span>
+              <input type="email" placeholder="example@example.com" required />
+            </div>
+            <div class="inputBox">
+              <span>address :</span>
+              <input type="text" placeholder="room - street - locality" required/>
+            </div>
+            <div class="inputBox">
+              <span>city :</span>
+              <input type="text" placeholder="mumbai" required/>
             </div>
 
-            <form class="form order-summary ">
+            <div class="flex">
+              <div class="inputBox">
+                <span>state :</span>
+                <input type="text" placeholder="india" required />
+              </div>
+              <div class="inputBox">
+                <span>zip code :</span>
+                <input type="text" placeholder="123 456" required/>
+              </div>
+            </div>
+          </div>
 
-                <div class="form-1 order-summary">
-                    <ul>
-                    <li><label for="number" class="form-pin-label labell required">User Pin</label></li>
-                    <input type="text" class="form-pin inpt" placeholder="XXXX XXXX XXXX XXXX" maxlength="16" id="number" required>
-                    
-                    <li><label for="name" class="form-name-label labell required">Username</label></li>
-                    <input type="text" class="form-name inpt" placeholder="Username" id="name" required>
+          <div class="col">
+            <h3 class="title">payment</h3>
 
-                    <li><label for="date" class="form-date-label labell required">Date</label></li>
-                    <input type="date" class="form-date inpt"  id="date" required>
+            <div class="inputBox">
+              <span>cards accepted :</span>
+              <img src="images/card_img.png" alt="" />
+            </div>
+            <div class="inputBox">
+              <span>name on card :</span>
+              <input type="text" placeholder="mr. john deo"  required/>
+            </div>
+            <div class="inputBox">
+              <span>credit card number :</span>
+              <input type="number" placeholder="1111-2222-3333-4444" required />
+            </div>
+            <div class="inputBox">
+              <span>exp month :</span>
+              <input type="text" placeholder="january" required/>
+            </div>
 
-                    <li><label for="password" class="form-date-label labell required">Security code</label></li>
-                    <input type="password" class="form-date-cvv" placeholder="123"  maxlength="3" id="password" required>
-                    <div class="cvv">
-                    <i class="fa-solid fa-credit-card"></i>
-                    <span>the last 3 digits on the back of your card</span>
-                </div>
-                    
-                </ul>
-                </div>
-                <div class="accordian">
-                    <div>
-                        <input type="checkbox" name="detail_accordian" id="address" class="accordian__address">
-                        <label for="address" class="accordian__label">Address Details<span class="edit">Edit</span></label>
-                        <div id="updated-detail-address"></div>
-                        <div class="accordian__content">
-                            <form action="#" class="form-popup">
-                                <ul id="address-li">
-                                
-                                       <li> 
-                                        <label for="name" class="form-name-label required">Address 1</label>
-                                        <input type="text" class="form-name"  id="addname" required>
-                                    </li>
-                    
-                                    <li> 
-                                        <label for="name" class="form-name-label">Address 2</label>
-                                        <input type="text" class="form-name"  id="name" >
-                                    </li>
-                                    <li> 
-                                        <label for="name" class="form-name-label">Address 3</label>
-                                        <input type="text" class="form-name"  id="name" >
-                                    </li>
-                    
-                                    <li> 
-                                        <label for="name" class="form-name-label required">Town/City</label>
-                                        <input type="text" class="form-name"  id="townname" required>
-                                    </li>
-                    
-                                    <li> 
-                                        <label for="name" class="form-name-label">State/Region</label>
-                                        <input type="text" class="form-name"  id="name" >
-                                    </li>
-                    
-                                    <li> 
-                                        <label for="name" class="form-name-label required">Postal Zip Code</label>
-                                        <input type="text" class="form-name"  id="zip" required>
-                                    </li>
-                                    <li> 
-                                        <label for="name" class="form-name-label">Country</label>
-                                        <select name="country" id="country">
-                                            <option value="US">United Sates</option>
-                                            <option value="UK">United Kingdom</option>
-                                            <option value="Canada">Canada</option>
-                                            <option value="Sri lanka">Sri Lanka</option>
-                                            <option value="Japan">Japan</option>
-                                            <option value="Russia">Russia</option>
-                                        </select>
-                                    </li>
-                                    </ul>
-                              </form> 
-                              <button class="billing-edit-save " onclick="updateContactaddress()">Save changes</button> 
-                        </div>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="detail_accordian" id="contact" class="accordian__address">
-                        <label for="contact" class="accordian__label">Contact Details<span class="edit">Edit</span></label>
-                        <div id="updated-detail"></div>
-                          <div class="accordian__content">
-                            <form  class="form order-summary class">
-                                <ul id="address-li">
-                                
-                                    <li> 
-                                        <label for="name" class="form-name-label">Phone number</label>
-                                        <input type="text" class="form-name" placeholder="Number" id="phn_number" required>
-                                    </li>
-                    
-                                    <li> 
-                                        <label for="name" class="form-name-label">email address</label>
-                                        <input type="text" class="form-name" placeholder="@gmail.com" id="mail" required>
-                                    </li>
-                                 
-                                    </ul>
-                              </form> 
-                              <button class="billing-edit-save " onclick="updateContact()">Save changes</button>
-                        </div> 
-                    </div>
-                    <div>
-                        <button class="save">SUBMIT</button>
-                    </div>
-                </div>
-                   
-               
+            <div class="flex">
+              <div class="inputBox">
+                <span>exp year :</span>
+                <input type="number" placeholder="2022" required />
+              </div>
+              <div class="inputBox">
+                <span>CVV :</span>
+                <input type="text" placeholder="1234" required/>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <script src="billing.js"></script>
-</body>
+        <input type="submit" value="proceed to checkout" class="submit-btn" />
+      </form>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <div class="container-cart">
+      <h2 class="cart-heading">Cart Items</h2>
+      <div class="cart-header">
+        <div class="column1">Item</div>
+        <div class="column2">Unit price</div>
+        <div class="column3">Units</div>
+      </div>
+      <div class="cart-items">
+        hiii hello
+        <!--  render cart items here  -->
+      </div>
+      <div class="paymentAmount">
+        Final Amount: <span class="price" id="id">$0.00</span>
+      </div>
+    </div>
+
+
+    <script src="checkout.js"></script>
+  </body>
 </html>
